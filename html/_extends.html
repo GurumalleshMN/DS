@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+class Account{
+	constructor(id, name){
+		this.aid=id;
+		this.aname=name;
+	}
+}
+
+class Savings extends Account{
+	constructor(id, name, rate){
+		super(id ,name);
+		this.rate=rate;
+	}
+}
+var acc=new Account(101, "Caitlin Snow");
+document.writeln(acc.aid+ " "+acc.aname);
+var sacc=new Savings(203, "Tess Wells", 2000);
+document.writeln(sacc.aid+ " "+sacc.aname+ " "+sacc.rate);
+</script>
+<body>
+
+</body>
+</html>

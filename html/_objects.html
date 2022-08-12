@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script> //object literal
+emp={ id:104, name:"Eobard Thawne", salary:50000}
+document.write(emp.id+ " "+emp.name+ " "+emp.salary);
+</script>
+
+<script> //via instance object
+var emp=new Object();
+emp.id=103; emp.name="Barry Allen"; emp.salary= 45000;
+document.write("<br>", emp.id+ " "+emp.name+ " "+emp.salary);
+</script>
+
+<script> // via object contructor
+function emp(id, name, salary){
+	this.id=id; this.name=name; this.salary=salary;
+}
+e=new emp(102, "Iris West", 40000);
+document.write("<br>", e.id+ " "+e.name+ " "+e.salary);
+
+/*
+ function student(roll, name, marks){
+	this.roll=roll; this.name=name; this.marks=marks;
+
+}
+s=new student(12, "Harrison Wells", 20);
+document.write(s.roll+ " "+s.name+ " "+s.marks);
+*/
+
+</script>
+<body>
+
+</body>
+</html>

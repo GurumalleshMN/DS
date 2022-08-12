@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+function emp(id, name, salary){
+	this.id=id; this.name=name; this.salary=salary;
+	this.changeSalary=changeSalary;	//forward declaration
+	
+	function changeSalary(otherSalary){
+		alert('Changing Salary...');
+		this.salary=otherSalary;
+		alert('Salary Changed...');
+	}
+}
+
+e=new emp(102,"Cisco", 30000);
+document.write(e.id+ " " +e.name+ " " +e.salary);
+e.changeSalary(20000);
+document.write("<br>", +e.id+ " " +e.name+ " " +e.salary);
+
+</script>
+<body>
+
+</body>
+</html>

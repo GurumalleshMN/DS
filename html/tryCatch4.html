@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+let json= "{ bad json}"; //wrong data
+
+try{
+	
+	let user=JSON.parse(json);
+	alert(user.name); //doesn't work since the data is not right
+}catch (e) {
+	// the execution jumps here
+	alert("Our apologies, the data has errors, we will try to ");
+	alert(e.name);
+	alert(e.message);
+}
+</script>
+<body>
+
+</body>
+</html>

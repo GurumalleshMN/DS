@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+function sayHi(){
+	alert("Hello");
+}
+alert(sayHi);//shows the function code
+sayHi();//calls the function
+
+function greet(){
+	alert("Good Morning");
+}
+
+let whatsup1=greet;
+let whatsup2=whatsup1;
+whatsup1();
+whatsup2();
+greet();
+
+let greetTheWorld=function (){alert("Hows Life?blue");}; //function with no name is assigned to greetTheWorld
+let greetTheWorldAgain=greetTheWorld;
+greetTheWorld();
+greetTheWorldAgain();
+
+
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+class moment extends Date{
+	Constructor(x){
+		super(x);
+	}
+}
+var m=new moment("February 22, 2022 18:20:21");
+document.writeln("Custom date:")
+document.writeln(m.getDate());
+
+
+
+/*class moment extends Date{
+	constructor(){
+		super();
+	}
+}
+var m=new moment();
+document.writeln("Current Date: ");
+document.writeln(m.getDate()+ "/" +(m.getMonth()+1)+ "/" +m.getFullYear()); //getMonth() starts with zero by default. Hence, getMonth()+1 is used
+*/
+</script>
+<body>
+
+</body>
+</html>

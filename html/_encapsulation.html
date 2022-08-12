@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+class Student{
+	constructor(){
+		var name;
+		var marks;
+	}
+	getName(){
+		return this.name;
+	}
+	setName(name){
+		this.name=name;
+	}
+	getMarks(){
+		return this.marks;
+	}
+	setMarks(marks){
+		this.marks=marks;
+	}
+}
+
+var stud=new Student;
+stud.setName("Jade");
+stud.setMarks(98);
+document.writeln(stud.getName()+ " "+stud.getMarks());
+</script>
+<body>
+
+</body>
+</html>

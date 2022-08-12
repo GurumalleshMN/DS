@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+//let func =          (arg1, arg2, ...argN) => single line ;
+//let fund =          (arg1, arg2, ...argN) => { line1; line2  } ;
+
+//let fune =           arg1                 => single line1 ;
+//let funf =           arg1                 => { line1, line 2 } ;
+//let fung =           ()                   =>  single line ;
+//let funh =           ()                   => { line1, line2  } ;
+
+let sum2 = (a,b) => a+b;
+alert(sum2(1,2));
+
+let double2 = n => n*2;
+alert(double2(3));
+
+let sayHi = () => alert("hello!");
+sayHi();
+
+let age=prompt("What is your age? ",18);
+let welcome=(age<18)?()=>alert("Hello"):()=>alert("Greetings"); //if age<18 alert("Hello"); else alert("Greetings");
+welcome();
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+function ask(question, yes, no){
+	if(confirm(question))
+		yes();
+	else 
+		no();
+}
+
+ask("Do you Agree?", 
+	function() { alert("You Agreed. ");},
+	function() { alert("You cancelled the execution. ");});
+ask("Are you sure?",
+	function() { alert("You passed. ");},
+	function() {alert("you stopped. ");});
+
+sayHi("Alex");
+function sayHi(name){alert(`Hello, ${name}` ); } //
+sayHi("Caroline");
+
+//sayHi1("How are you1?");
+let sayHi1=function(name) { alert(`Hello, ${name}`);};
+sayHi1("how are you2?")
+</script>
+<body>
+
+</body>
+</html>

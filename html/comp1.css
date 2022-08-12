@@ -1,0 +1,58 @@
+@charset "ISO-8859-1";
+
+body{
+	background-image: url("tcs1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	border-style:dotted;
+	border-width:5px;
+	border-color:blue;
+}
+h1{
+	color: blue; 
+	text-align: Left;
+	text-shadow:2px 2px 5px red;
+}
+
+h2{
+	color: red;
+	text-align: center;
+	text-shadow:2px 2px 5px blue;
+}
+
+h3{
+	color:orange;
+	text-align:center;
+	text-shadow: 2px 2px 5px yellow;
+}
+
+table{
+	margin-left:auto;
+	margin-right:auto;
+	background:#00CED1
+	url("tcs.jpg")
+}
+
+tR{
+	background-color: #F8F8FF;
+}
+
+tH{
+	background-color: #FF1493;
+}
+
+.body1{
+	color:black;
+	font-size:20px;
+}
+
+/*.body2{
+	color:black;
+	font-size:15px;
+}*/
+
+.body3{
+	color:orange;
+	font-size:20px;
+}

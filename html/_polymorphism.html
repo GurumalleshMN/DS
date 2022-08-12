@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+class Account{
+	withdraw(){
+		document.writeln("Accounts withdraw is invoked<br>");
+	}
+}
+
+class Savings extends Account {
+	withdraw(){
+		document.writeln(" Savings withdraw is invoked<br>");
+	}
+}
+var a=[new Account(), new Savings()]
+a.forEach(
+		function(accRef){
+			accRef.withdraw();
+		}
+		);
+</script>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+// AJAX-
+</script>
+
+<script type="text/javascript" language="javascript">
+
+$(document).ready(
+	function (){
+		$("button").click(
+		function ()	{
+			$("p").html("This is paragraph");
+		}	
+		);
+		/*
+		$("button").click(
+		function ()	{
+			$("p").toggle(1000);
+		}
+		$("#hideIt").click(
+		function ()	{
+			$("p").hide();
+		}
+		$("#showIt").click(
+		function (){
+			$("p").show();
+		}		
+		)*/
+	}
+);
+
+</script>
+<body>
+<p> Dassault Systèmes (3DS) grew out of the aerospace industrys search for more sophisticated drafting tools to streamline the development process and aid in the increasing complexity of aviation design. <br>Dassault Systemes spun out in 1981 (as part of Dassault Group.) to develop and market Dassault's 3D surface design software CATI, later renamed CATIA</p>
+  
+ 
+<!--<button id= hideIt>Hide It</button>-->
+<!--<button id= showIt>Show It</button>-->
+
+<button>Toggle</button>
+</body>
+</html>

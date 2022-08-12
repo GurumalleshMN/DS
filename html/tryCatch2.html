@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+try{
+	lalala; //error variable is not defined
+}catch(err) {
+	alert(err.name); //Reference Error
+	alert(err.message); //lalala is not defined
+	alert(err.stack); // Reference Error is not defined as whole
+	
+	alert(err); //Reference Error: lalala is not defined
+	
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<script>
+
+var number1;
+var number2;
+
+	function initialize(){
+		number1=document.getElementById("num1").value;
+		number2=document.getElementById("num2").value;
+		console.log("number1" +number1);
+		console.log("number2"+number2);
+	}
+	function addNumbers(){
+		initialize();
+		
+		var addition=parseInt(number1)+parseInt(number2);
+		document.getElementById("answer1").value=addition;
+	}
+	
+	function subNumbers(){
+		initialize();
+		
+		var subtraction=parseInt(number1)-parseInt(number2);
+		document.getElementById("answer2").value=subtraction;
+	}
+	
+	function mulNumbers(){
+		initialize();
+		
+		var multiplication=parseInt(number1)*parseInt(number2);
+		document.getElementById("answer3").value=multiplication;
+	}
+	
+	function divNumbers(){
+		initialize();
+		
+		var division=parseInt(number1)/parseInt(number2);
+		document.getElementById("answer4").value=division;
+	}
+</script>
+<body>
+
+Enter number 1<input type=text id="num1"> <br>
+Enter number 2<input type=text id="num2"> <br>
+
+<input type="button" id="add" value="ADD" onClick="addNumbers()">
+<INPUT TYPE="text" id="answer1">
+<br>
+<input type="button" id="sub" value="SUBTRACT" onClick="subNumbers()">
+<INPUT TYPE="text" id="answer2">
+<br>
+<input type="button" id="mul" value="MULTIPLY" onClick="mulNumbers()">
+<INPUT TYPE="text" id="answer3">
+<br>
+<input type="button" id="div" value="DIVIDE" onClick="divNumbers()">
+<INPUT TYPE="text" id="answer4">
+<br>
+
+</body>
+</html>

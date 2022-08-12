@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+ async function f() {
+	 let promise = new Promise((resolve, reject) =>
+ {
+		 setTimeout(() => resolve("done!"), 3000)
+	 });
+	 let result = await promise; //wait until promise resolve
+	 
+	 alert(result); // "done!"
+ }
+ 
+ f();
+ // the function execution pauses at the line (*) and resumes
+ </script>
+<body>
+
+</body>
+</html>

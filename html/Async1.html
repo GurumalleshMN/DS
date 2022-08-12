@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+function mymain(){
+	return new Promise(
+		function(resolve, reject)
+		{
+			num=90;
+			if(num>45) {
+				reject();
+			}
+		}
+	);
+}
+mymain().catch(
+		function(){
+			console.log("its not greater than 90");
+		}
+	);	
+</script>
+<body>
+
+</body>
+</html>

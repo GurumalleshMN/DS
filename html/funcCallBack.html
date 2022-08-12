@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+function ask(question, ok, cancel){
+	if(confirm(question)) //ok and cancel button
+		ok(); //this is a callback the agree/sure/confirm
+	else
+		cancel();
+}
+
+ask("Do you Agree?", 
+	function agree(){ alert("You Agreed. ");},
+	function disagree(){alert("You cancelled the execution");});
+
+ask("Are you sure?",
+	function sure(){alert("You are sure. ");},
+	function NotSure(){alert("You are not Sure. ");});
+
+ask("Confirm to delete?",
+		function confirmed(){alert("You are confirmed to delete. ");},
+		function Notconfirmed(){alert("You are not confirmed to delete. ");});
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="styleSheet" href="comp1.css">
+</head>
+<script>
+function validateUser(){
+	var username=document.getElementById("uname").value;
+	if(username==""){
+		document.getElementById("userErr").innerHTML='Username cannot be blank';
+		userErr.style.color="red";
+		return false;
+	}
+	var email=document.getElementById("umail").value;
+	if(email==""){
+		document.getElementById("mailErr").innerHTML='Email id cannot be blank';
+		mailErr.style.color="blue";
+		return false;
+	}
+	var password=document.getElementById("upass").value;
+	if(password==""){
+		document.getElementById("passErr").innerHTML='Password cannot be blank';
+		passErr.style.color="green";
+		return false;
+	}
+	var city=document.getElementById("city").value;
+	if(city==""){
+		document.getElementById("cityErr").innerHTML='City cannot be blank';
+		cityErr.style.color="brown";
+		return false;
+	}
+	var mobNum=document.getElementById("number").value;
+	if(mobNum==""){
+		document.getElementById("numErr").innerHTML='Mobile number cannot be blank';
+		numErr.style.color="orange";
+		return false;
+	}
+	
+	return true;
+}
+function clearUserErr(){
+	document.getElementById("userErr").innerHTML="";
+}
+
+function clearPassErr(){
+	document.getElementById("passErr").innerHTML="";
+}
+function clearCityErr(){
+	document.getElementById("cityErr").innerHTML="";
+}
+
+function clearNumErr(){
+	document.getElementById("numErr").innerHTML="";
+}
+function clearMailErr(){
+	document.getElementById("mailErr").innerHTML="";
+}
+
+</script>
+<body>
+
+<div style=text-align:center>
+<a href="homeComp.html">Home</a>
+</div>
+<h1>Welcome to TCSNEXTSTEP</h1>
+<h2>Register to TCSNEXTSTEP<br></h2>
+<form action="LoginComp.html">
+<table id="register" border=5 cellspacing=10 cellpadding=10>
+<tr><td>Username</td><td><input type=text name=username id="uname" onKeyUp="clearUserErr()"><span id="userErr"></span></td></tr>
+<tr><td>email Id</td><td><input type=text name= email id="umail" onKeyUp="clearMailErr()"><span id="mailErr"></span></td></tr>
+<tr><td>Password</td> <td><input type=password name=password id="upass" onKeyUp="clearPassErr()"><span id="passErr"></span></td></tr>
+<tr><td>city</td><td><input type=text name=city id="city" onKeyUp="clearCityErr()"><span id="cityErr" ></span></td></tr>
+<tr><td>mobile Number</td><td><input type=number name=number id="number" onKeyUp="clearNumErr"><span id="numErr"></span></td></tr>
+<tr> <td><input type =submit name=submit value="Register"onClick="return validateUser()"></td></tr>
+<tr> <td colspan=2> Already registered? <a href="compLogin.html">Login</a>
+</form>
+</table>
+</body>
+</html>
